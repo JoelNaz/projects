@@ -1,0 +1,163 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    
+    background-color: lightblue
+}
+
+footer {
+    background-color: rgb(42, 122, 202);
+ 
+    color: white;
+    position: relative;
+
+
+
+    bottom: 0;
+    width:100vw;
+
+
+
+
+
+}
+footer div.one{
+    font-size: large;
+}
+footer img{
+    height: 120px;
+    width: 120px;
+}
+
+div.fourimg img{
+    height: 300px;
+    width: 300px;
+
+}
+
+div.container {
+    display: flex;
+    justify-content: space-around;
+
+
+}
+
+/* div.two a {
+    color: white;
+    text-decoration: none;
+} */
+
+div.three a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+div.pledge-container {
+   
+    background-image: linear-gradient(109.6deg, rgba(61, 131, 97, 1) 11.2%, rgba(28, 103, 88, 1) 91.1%);
+    color: white;
+    padding: 5px;
+    width:100vw;
+    display: grid;
+    place-items: center;
+}
+
+h2.pl,
+p.pl {
+    line-height: 10px;
+    font-family: sans-serif;
+}
+
+div.pledge-container a {
+    color: white;
+    text-decoration: none;
+
+}
+
+div.pledge-container a:hover {
+    color: lightcoral;
+
+
+}
+
+div.pledge-container h2 {
+    font-size: 55px;
+}
+
+div.pledge-container p {
+    font-size: 25px;
+}
+
+div.mainPledge {
+    width: 60%;
+    width: 90%;
+    background-color: rgb(241, 238, 238);
+    margin-left: 5%;
+    margin-right: 5%;
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    padding-top: 25px;
+    padding-left: 45px;
+    padding-bottom: 25px;
+    padding-right: 40px;
+
+
+
+
+
+
+
+}
+
+section.about-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.mainPledge p#hindipl {
+    letter-spacing: 1px;
+    font-size: larger;
+    line-height: 30px;
+    font-family: cursive;
+}
+
+div.mainPledge p#engpledge {
+
+    font-size: larger;
+    line-height: 30px;
+    font-family: cursive;
+    letter-spacing: 1px;
+}
+
+div.btn {
+    text-align: center;
+
+}
+
+div.btn button {
+    background-color: green;
+    color: white;
+    border-radius: 50px;
+    padding: 10px;
+    font-size: larger;
+    border: 1px solid black;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-shadow: 5px 5px 5px black;
+
+}
+
+button:hover {
+    cursor: pointer;
+}

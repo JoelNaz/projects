@@ -1,0 +1,10 @@
+.Dashboard-Header {
+    text-decoration: underline;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.Dashboard-Content {
+    font-size: larger;
+    line-height: 200%;
+}

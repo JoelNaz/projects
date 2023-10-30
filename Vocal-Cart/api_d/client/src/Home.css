@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('https://img.freepik.com/free-vector/abstract-soft-colorful-watercolor-texture-background-design-vector_1055-12127.jpg'); /* Set your background image path here */
+  background-size: cover;
+  background-position: center;
+  font-family: Arial, sans-serif;
+}
+
+.homepage {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.app-bar {
+  background-color: #1976D2;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.avatar {
+  background-color: #f50057;
+}
+
+
+
+.logo {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 20px;
+}
+
+.button-group {
+  margin-top: 20px;
+}
+
+.loading {
+  margin-top: 20px;
+}

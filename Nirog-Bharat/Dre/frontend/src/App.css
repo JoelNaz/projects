@@ -1,0 +1,316 @@
+/* 
+            TEMP
+    backgroundImage: 'radial-gradient(circle, #bedef2, #6DD5FA, #f0f0f0)' : Background Gradient for MainContentContainer
+*/
+
+.abhyanStatisticsBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+    height: 90%;
+    text-align: center;
+    background-color: #0093ff;
+    /*background-image: linear-gradient(to bottom left, #e1f5ff 2%, #1ba7f9, #1975c1);*/
+    border-radius: 15px;
+    padding: 4px;
+}
+
+.carousel-item {
+    height: 80vh;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-indicators button {
+    margin: 20px 0px;
+}
+
+.carousel-caption{ 
+    margin-bottom: 15px;
+}
+
+.carousel-caption h5, .carousel-caption p {
+    color: white;
+}
+
+.carousel-indicators li {
+    background-color: white; 
+}
+
+.objectives-list {
+    font-size: large;
+
+}
+
+/* Joshi CSS 
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    
+    background-color: lightblue
+}
+
+footer {
+    background-color: rgb(42, 122, 202);
+ 
+    color: white;
+    position: relative;
+
+
+
+    bottom: 0;
+    width:100vw;
+
+    display: flex;
+    justify-content: space-between;
+
+
+
+}
+footer div.one{
+    font-size: large;
+}
+footer img{
+    height: 120px;
+    width: 120px;
+}
+
+div.fourimg img{
+    height: 300px;
+    width: 300px;
+
+}
+
+div.container {
+    display: flex;
+    justify-content: space-around;
+
+    padding-top: 4px;
+
+}
+
+div.three a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Joshi CSS 2 */
+
+section.about-page input{
+    width: 95%;
+    padding: 15px;
+    border: 1px solid black;
+    box-shadow: 5px 5px 5px black;
+    font-size: larger;
+    
+
+}
+section.about-page div.certbtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+}
+div.certbtn button{
+    padding: 9px;
+    border-radius: 20px;
+    font-size: large;
+    width: 90px;
+    font-weight: bold;
+}
+div.certbtn button#s{
+    color: aliceblue;
+    background-color: lightgreen;
+    border: 0;
+
+}
+div.certbtn button#s:hover{
+    background-color: green;
+}
+div.certbtn button#r{
+    color: aliceblue;
+    background-color:lightcoral;
+    border: 0;
+
+}
+div.certbtn button#r:hover{
+        background-color: red;
+}
+
+/**/
+
+html,
+.body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    
+    background-color: lightblue
+}
+
+footer {
+    background-color: rgb(42, 122, 202);
+ 
+    color: white;
+    position: relative;
+
+
+
+    bottom: 0;
+    width:100vw;
+
+
+
+
+
+}
+footer div.one{
+    font-size: large;
+}
+footer img{
+    height: 120px;
+    width: 120px;
+}
+
+div.fourimg img{
+    height: 300px;
+    width: 300px;
+
+}
+
+div.container {
+    display: flex;
+    justify-content: space-around;
+
+
+}
+
+/* div.two a {
+    color: white;
+    text-decoration: none;
+} */
+
+div.three a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+div.pledge-container {
+   
+    background-image: linear-gradient(109.6deg, rgba(61, 131, 97, 1) 11.2%, rgba(28, 103, 88, 1) 91.1%);
+    color: white;
+    padding: 5px;
+    width:100vw;
+    display: grid;
+    place-items: center;
+    height: 175px;
+}
+
+h2.pl,
+p.pl {
+    line-height: 10px;
+    font-family: sans-serif;
+}
+
+div.pledge-container a {
+    color: white;
+    text-decoration: none;
+
+}
+
+div.pledge-container a:hover {
+    color: lightcoral;
+
+
+}
+
+div.pledge-container h2 {
+    font-size: 55px;
+}
+
+div.pledge-container p {
+    font-size: 25px;
+}
+
+div.mainPledge {
+    width: 60%;
+    width: 90%;
+    background-color: rgb(241, 238, 238);
+    margin-left: 5%;
+    margin-right: 5%;
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    padding-top: 25px;
+    padding-left: 45px;
+    padding-bottom: 25px;
+    padding-right: 40px;
+
+
+
+
+
+
+
+}
+
+section.about-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.mainPledge p#hindipl {
+    letter-spacing: 1px;
+    font-size: larger;
+    line-height: 30px;
+    font-family: cursive;
+}
+
+div.mainPledge p#engpledge {
+
+    font-size: larger;
+    line-height: 30px;
+    font-family: cursive;
+    letter-spacing: 1px;
+}
+
+div.btn {
+    text-align: center;
+
+}
+
+div.btn button {
+    background-color: green;
+    color: white;
+    border-radius: 50px;
+    padding: 10px;
+    font-size: larger;
+    border: 1px solid black;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-shadow: 5px 5px 5px black;
+
+}
+
+button:hover {
+    cursor: pointer;
+}

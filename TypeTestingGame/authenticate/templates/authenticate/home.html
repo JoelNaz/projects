@@ -1,0 +1,158 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+	<title>Welcome</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="EndGam Gaming Magazine Template">
+	<meta name="keywords" content="endGam,gGaming, magazine, html">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+
+	<!-- Google Font -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="{% static 'authenticate/bootstrap.min.css'%}"/>
+	<link rel="stylesheet" href="{% static 'authenticate/owl.carousel.min.css'%}"/>
+	
+
+	<!-- Main Stylesheets -->
+	<link rel="stylesheet" href="{% static 'authenticate/style.css'%}"/>
+
+
+	<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+</head>
+<body>
+
+	<form id="form" method='post' action="/authenticate/game">
+		{% csrf_token %}
+
+		<!-- Page Preloder -->
+		<div id="preloder">
+			<div class="loader"></div>
+		</div>
+
+
+
+		<!-- Header section -->
+		<header class="header-section">
+			<div class="header-warp">
+				<div class="header-social d-flex justify-content-end">
+					<p>Follow us:</p>
+					<a href="#"><i class="fa fa-pinterest"></i></a>
+					<a href="#"><i class="fa fa-facebook"></i></a>
+					<a href="#"><i class="fa fa-twitter"></i></a>
+					<a href="#"><i class="fa fa-youtube"></i></a>
+					<a href="#"><i class="fa fa-instagram"></i></a>
+				</div>
+				<div class="header-bar-warp d-flex">
+					
+					
+						
+					</a>
+					<nav class="top-nav-area w-100">
+						<div class="user-panel">
+							<a href="/authenticate/auth">Login/Register</a>  
+						</div>
+						<!-- Menu -->
+						<ul class="main-menu primary-menu">
+							
+							
+								<li><a href="/authenticate/home">Home</a></li>
+
+
+
+								<button class="gbtn" type="submit" id="game">Game</button>
+								<li><a href="/authenticate/rank">Rank</a></li>
+							
+							
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+		<!-- Header section end -->
+
+		
+
+		<!-- Hero section -->
+		<section class="hero-section overflow-hidden">
+			<div class="hero-slider owl-carousel">
+				<div class="hero-item set-bg d-flex align-items-center justify-content-center text-center" data-setbg="{%static 'authenticate/slider-bg-1.jpg' %}">
+					<div class="container">
+						<h1 style="color:rgb(190, 138, 200);" id="w">Welcome</h1>
+						<h1 style="color:rgb(235, 168, 233);" > {{fname}} </h1><br>
+						<input type="hidden" name="fname" value="{{ fname }}" />
+						<h2>Type Test</h2>
+						<p>Failure doesn't mean the game is over, it means try again with experience.,<br>Eat. Sleep. Type. Repeat..</p>
+						
+					</div>
+
+					
+
+				</div>
+
+				
+
+
+				<div class="hero-item set-bg d-flex align-items-center justify-content-center text-center" data-setbg="{%static 'authenticate/slider-bg-2.jpg' %}">
+					<div class="container">
+						<h2>Type Test</h2>
+						<p>The best way to predict the future is to create it,<br>Keep calm and game on..</p>
+						
+					</div>
+				</div>
+			</div>
+		</section>
+
+	</form>
+	<!-- Hero section end-->
+
+	<script scr="https://cdnjs.cloudflare.com/ajax/libs/axios/1.3.4/axios.min.js"></script>
+
+
+
+	
+	<script>
+		var load = document.getElementById("game")
+		var fn = document.getElementById("f")
+		load.addEventListener("click", function(){
+			
+			var fd = new Formdata()
+			fd.append("f", document.getElementById("f").value)
+			fd.append("csrfmiddlewaretoken", '{{csrf_token}}')
+			axios.post("game", fd)
+				.then(function(res){
+					console.log(res.data)
+				})
+				.catch(function(err){
+					console.log(err)
+				})
+			
+		});
+
+
+		
+	</script>		
+	
+
+
+	<!--====== Javascripts & Jquery ======-->
+	<script src="{% static 'authenticate/jquery-3.2.1.min.js' %}"></script>
+	<script src="{% static 'authenticate/jquery.slicknav.min.js' %}"></script>
+	<script src="{% static 'authenticate/owl.carousel.min.js' %}"></script>
+	<script src="{% static 'authenticate/main.js' %}"></script>  
+
+	<!--
+		
+	-->
+
+	</body>
+</html>

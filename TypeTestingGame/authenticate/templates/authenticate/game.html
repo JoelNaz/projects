@@ -1,0 +1,54 @@
+{% load static %}
+<html lang="en">
+<head>
+  <title>Simple Speed Typer</title>
+  <link rel="stylesheet" href="{%static 'authenticate/gstyle.css' %}">
+</head>
+<body>
+  <form action="/authenticate/submit" method="post">
+  {% csrf_token %}
+  <h1>Welcome</h1>
+  <h1> {{f}} </h1>
+  <div class="container">
+    <div class="heading">Simple Speed Typing</div>
+    <div class="header">
+      <div class="wpm">
+        <div class="header_text">WPM</div>
+        <div class="curr_wpm">100</div> 
+      </div> 
+      
+      <input type="hidden" />
+      <div class="cpm">
+        <div class="header_text">CPM</div>
+        <div class="curr_cpm">100</div>
+      </div>
+      <div class="errors">
+        <div class="header_text">Errors</div>
+        <div class="curr_errors">0</div>
+      </div>
+      <div class="timer">
+        <div class="header_text">Time</div>
+        <div class="curr_time">10s</div>
+      </div>
+      <div class="accuracy">
+        <div class="header_text">% Accuracy</div>
+        <div class="curr_accuracy">100</div>
+      </div>
+    </div>
+
+    <div class="quote">Click on the area below to start the game.</div>
+    <textarea class="input_area" placeholder="start typing here..." oninput="processCurrentText()"
+      onfocus="startGame()"></textarea>
+    <button class="restart_btn" onclick="resetValues()">Restart</button><br></br>
+  </div>
+  <textarea hidden name="wpm" id="idwpm"></textarea>
+  <textarea hidden name="cpm" id="idcpm"></textarea>
+  <textarea hidden name="error" id="iderror"></textarea>
+  <textarea hidden name="accu" id="idaccu"></textarea>
+  <input type="hidden" name="username" value="{{ f }}" />
+  <button type"submit" class="subbtn">Submit</button>
+  <script src="{%static 'authenticate/game.js' %}"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+</form>
+</body>
+</html>

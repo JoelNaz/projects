@@ -1,0 +1,177 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="{% static 'authen/style.css' %}" rel="stylesheet">
+    <style>
+        section.about-page input{
+            width: 95%;
+            padding: 15px;
+            border: 1px solid black;
+            box-shadow: 5px 5px 5px black;
+            font-size: larger;
+            
+
+        }
+        section.about-page div.certbtn{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+
+        }
+        div.certbtn button{
+            padding: 9px;
+            border-radius: 20px;
+            font-size: large;
+            width: 90px;
+            font-weight: bold;
+        }
+        div.certbtn button#s{
+            color: aliceblue;
+            background-color: lightgreen;
+            border: 0;
+
+        }
+        div.certbtn button#s:hover{
+            background-color: green;
+        }
+        div.certbtn button#r{
+            color: aliceblue;
+            background-color:lightcoral;
+            border: 0;
+
+        }
+        div.certbtn button#r:hover{
+                background-color: red;
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <section class="breadcump">
+        <div class="pledge-container">
+            <h2 class="pl">Take A Pledge</h2>
+            <p class="pl"><a href="">Home</a> / Take a Pledge</p>
+        </div>
+
+    </section><br><br>
+
+    <section class="about-page">
+
+        <div class="mainPledge">
+
+            <h2 style="text-align: center;color: rgb(235, 88, 88);font-size:xx-large;">Generate Certificate</h2><br>
+            <form action="" method="post">
+                <div>
+                    
+                <input required type="text" id="name" name="name" placeholder="Name">
+                </div>
+                <br>
+                <div>
+                    
+                <input required type="text" id="age" name="age" placeholder="Age">
+                </div>
+                <br>
+                <div>
+                    
+                <input required type="text" id="district" name="district" placeholder="District">
+                </div>
+                <br>
+                <div>
+                   
+                <input required type="text" id="state" name="state" placeholder="State">
+                </div>
+                <br>
+
+                <div class="certbtn">
+                    <button id="s" type="submit">Submit</button>
+                    &nbsp; &nbsp;
+                    <button id="r" type="reset">Reset</button>
+                </div>
+                
+            </form>
+           
+        </div>
+        
+       
+    </section>
+    <br>
+    <br>
+    <br>
+    <br><br>
+    <footer>
+        <div class="container">
+            <div class="one">
+                <p>Copyright ©️ 2023 - All Rights Reserved - Official website of<br> Pradhan Mantri Jan Arogya Yojana
+                    (PM-JAY), Government<br> of India<br>
+                    Website Content Managed by - PM-JAY<br>
+                    Email: webmaster-pmjay[at]nha[dot]gov[dot]in<br>
+                    Postal Address : 9th Floor, Tower-l, Jeevan Bharati Building,<br>Connaught Place, New Delhi -
+                    110001<br>
+                    ☎ Toll-Free Call Center No - 14555<br>
+                    Last Updated on: 08-02-2023</p>
+            </div>
+            <!-- <div class="two">
+                <h3>IMPORTANT LINKS</h3>
+                <hr noshade color="white" style="text-align: left;width: 15%;margin-left: 0;height: 2px;">
+                <br>
+                <br>
+                <details>
+                    <summary><a href="">Ministry of Health and Family Welfare</a></summary>
+                </details>
+                <hr color="white" noshade>
+                <details>
+                    <summary><a href="">Niti Ayog</a></summary>
+                </details>
+                <hr color="white" noshade>
+                <details>
+                    <summary><a href="">National Portal</a></summary>
+                </details>
+                <hr color="white" noshade>
+
+            </div> -->
+            <div class="three">
+                <h3>POLICIES</h3>
+                <hr noshade color="white" style="text-align: left;width: 20%;margin-left: 0;height: 2px;">
+                <br>
+                <br>
+                <details>
+                    <summary><a href="">Terms and Conditions</a></summary>
+                </details>
+                <hr color="white" noshade>
+                <details>
+                    <summary><a href="">Whistle Blower Policy</a></summary>
+                </details>
+                <hr color="white" noshade>
+                <details>
+                    <summary><a href="">Website Policy</a></summary>
+                </details>
+                <hr color="white" noshade>
+                <details>
+                    <summary><a href="">Help</a></summary>
+                </details>
+                <hr color="white" noshade>
+                <a href="#" id="btp">Back to top</a>
+                <br><br>
+            </div>
+            <div class="fourimg">
+                <h3>APP FOR ANDROID</h3>
+                <hr noshade color="white" style="text-align: left;width: 18%;margin-left: 0;height: 2px;">
+                <img  src="{% static 'authen/footerpic.jpeg' %}" alt="">
+                <br>
+                <br>
+            </div>
+
+
+
+    </footer>
+
+  
+</body>
+</html>
